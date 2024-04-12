@@ -1,0 +1,9 @@
+{
+	"name": "TrueNorthADF-Dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d3ab3a0-d882-4cb9-a109-e60068f7b692",
+		"tenantId": "f9ca3f2a-a147-4320-9a5c-2f0eeb9262c4"
+	}
+}
