@@ -48,7 +48,7 @@ jobs:
       buildType: 'current'
       artifactName: 'Databases'
       targetPath: '$(Pipeline.Workspace)'
-  - powershell: |
-      "C:\Program Files\Microsoft SQL Server\160\DAC\bin\sqlpackage.exe" /sourceFile:$($env:Pipeline_Workspace)\AdventureWorks.dacpac /targetServerName: localhost /targetDatabaseName: AdventureWorksTest
-    
-    displayName: Run SQLPackage.exe on localhost
+  - task: PowerShell@2
+    displayName: Deploy to local host with PowerShell script
+    inputs:
+      filePath: '$(Build.SourcesDirectory)/DBDeploy.ps1'
