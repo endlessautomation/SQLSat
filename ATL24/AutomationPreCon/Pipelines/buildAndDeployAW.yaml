@@ -1,0 +1,54 @@
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+
+jobs:
+- job: buildDatabases
+  displayName: Build Visual Studio Database Projects
+  steps:
+  - task: VSBuild@1
+    displayName: Build Visual Studio Project
+    inputs:
+      solution: '$(Build.SourcesDirectory)/Adventureworks/**/*.sln'
+      clean: true
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Build.SourcesDirectory)/AdventureWorks/bin/debug/AdventureWorks.dacpac'
+      artifact: 'Databases'
+      publishLocation: 'pipeline'
+- job: deployToAzure
+  dependsOn: buildDatabases
+  displayName: Deploy DACPAC to Azure SQL DB
+  steps:
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: 'current'
+      artifactName: 'Databases'
+      targetPath: '$(Pipeline.Workspace)'
+  - task: SqlAzureDacpacDeployment@1
+    inputs:
+      azureSubscription: 'MVP Community'
+      AuthenticationType: 'servicePrincipal'
+      ServerName: 'endlessreporting.database.windows.net'
+      DatabaseName: 'AdventureWorks'
+      deployType: 'DacpacTask'
+      DeploymentAction: 'Publish'
+      DacpacFile: '$(Pipeline.Workspace)/AdventureWorks.dacpac'
+      IpDetectionMethod: 'AutoDetect'
+- job: deployToOnPremises
+  dependsOn: buildDatabases
+  displayName: Deploy DACPAC to SQL Server
+  pool:
+    name: LaptopPool
+  steps:
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      buildType: 'current'
+      artifactName: 'Databases'
+      targetPath: '$(Pipeline.Workspace)'
+  - powershell: |
+      "C:\Program Files\Microsoft SQL Server\160\DAC\bin\sqlpackage.exe" /sourceFile:$($env:Pipeline_Workspace)\AdventureWorks.dacpac /targetServerName: localhost /targetDatabaseName: AdventureWorksTest
+    
+    displayName: Run SQLPackage.exe on localhost
