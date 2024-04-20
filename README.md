@@ -5,8 +5,10 @@
 
 Folders
 
-ATL24 - SQL Saturday Atlanta 2024
+ATL24 - Atlanta 2024
 
-* AutomationPreCon 
+* AutomationPreCon - "Automate Database Deployments with Azure DevOps"
    
-* IntroToGitHub
+* IntroToGitHub - General Session - "Introduction to Automated DB Deployments with GitHub Actions"
+
+JAX24 - Jacksonville 2024
