@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Demos/SQLSatATL/AdventureWorks/.vs/AdventureWorks/v17
+/Demos/SQLSatATL/AdventureWorks/obj/Debug
+/Demos/SQLSatATL/AdventureWorks/.vs/AdventureWorks/FileContentIndex

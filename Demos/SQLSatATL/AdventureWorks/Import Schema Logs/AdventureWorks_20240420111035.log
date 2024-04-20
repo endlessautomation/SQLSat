@@ -1,0 +1,85 @@
+4/20/2024 6:10:35 AM	This log contains information about the import schema operation into project 'AdventureWorks' on computer 'ROADWARRIOR' by user 'ErinDempster'.
+4/20/2024 6:10:35 AM	Import of database schema has started.
+4/20/2024 6:10:46 AM	Gathering database credentials
+4/20/2024 6:10:46 AM	Gathering database options
+4/20/2024 6:10:46 AM	Gathering generic database scoped configuration option
+4/20/2024 6:10:46 AM	Gathering users
+4/20/2024 6:10:46 AM	Gathering roles
+4/20/2024 6:10:46 AM	Gathering application roles
+4/20/2024 6:10:46 AM	Gathering role memberships
+4/20/2024 6:10:46 AM	Gathering filegroups
+4/20/2024 6:10:46 AM	Gathering full-text catalogs
+4/20/2024 6:10:46 AM	Gathering assemblies
+4/20/2024 6:10:46 AM	Gathering certificates
+4/20/2024 6:10:46 AM	Gathering asymmetric keys
+4/20/2024 6:10:46 AM	Gathering symmetric keys
+4/20/2024 6:10:46 AM	Gathering encrypted symmetric keys
+4/20/2024 6:10:46 AM	Gathering schemas
+4/20/2024 6:10:46 AM	Gathering XML schema collections
+4/20/2024 6:10:46 AM	Gathering user-defined data types
+4/20/2024 6:10:46 AM	Gathering user-defined types
+4/20/2024 6:10:46 AM	Gathering table types
+4/20/2024 6:10:47 AM	Gathering unique keys for table types
+4/20/2024 6:10:47 AM	Gathering primary keys for table types
+4/20/2024 6:10:47 AM	Gathering indexes for table types
+4/20/2024 6:10:47 AM	Gathering check constraints for table types
+4/20/2024 6:10:47 AM	Gathering default constraints for table types
+4/20/2024 6:10:47 AM	Gathering partition functions
+4/20/2024 6:10:47 AM	Gathering partition schemes
+4/20/2024 6:10:47 AM	Gathering functions
+4/20/2024 6:10:47 AM	Gathering encrypted functions
+4/20/2024 6:10:47 AM	Gathering aggregates
+4/20/2024 6:10:47 AM	Gathering procedures
+4/20/2024 6:10:47 AM	Gathering encrypted procedures
+4/20/2024 6:10:47 AM	Gathering tables
+4/20/2024 6:10:47 AM	Gathering primary keys
+4/20/2024 6:10:47 AM	Gathering unique constraints
+4/20/2024 6:10:47 AM	Gathering foreign keys
+4/20/2024 6:10:47 AM	Gathering default constraints
+4/20/2024 6:10:47 AM	Gathering check constraints
+4/20/2024 6:10:47 AM	Gathering views
+4/20/2024 6:10:47 AM	Gathering encrypted views
+4/20/2024 6:10:47 AM	Gathering indexes
+4/20/2024 6:10:47 AM	Gathering statistics
+4/20/2024 6:10:47 AM	Gathering full-text index stoplists
+4/20/2024 6:10:47 AM	Gathering search property lists
+4/20/2024 6:10:47 AM	Gathering search properties
+4/20/2024 6:10:47 AM	Gathering full-text indexes
+4/20/2024 6:10:47 AM	Gathering column store indexes
+4/20/2024 6:10:47 AM	Gathering spatial indexes
+4/20/2024 6:10:47 AM	Gathering XML indexes
+4/20/2024 6:10:47 AM	Gathering Selective XML indexes
+4/20/2024 6:10:47 AM	Gathering encrypted triggers
+4/20/2024 6:10:47 AM	Gathering triggers
+4/20/2024 6:10:47 AM	Gathering encrypted and clr ddl triggers
+4/20/2024 6:10:47 AM	Gathering ddl triggers
+4/20/2024 6:10:47 AM	Creating edge constraints
+4/20/2024 6:10:47 AM	Gathering synonyms
+4/20/2024 6:10:47 AM	Gathering defaults
+4/20/2024 6:10:47 AM	Gathering data constraint uddt bindings
+4/20/2024 6:10:47 AM	Gathering rules
+4/20/2024 6:10:47 AM	Gathering data constraint uddt bindings
+4/20/2024 6:10:47 AM	Gathering message types
+4/20/2024 6:10:47 AM	Gathering queues
+4/20/2024 6:10:47 AM	Gathering contracts
+4/20/2024 6:10:47 AM	Gathering services
+4/20/2024 6:10:47 AM	Gathering event notifications
+4/20/2024 6:10:47 AM	Gathering remote service bindings
+4/20/2024 6:10:47 AM	Gathering broker priorities
+4/20/2024 6:10:47 AM	Gathering signatures
+4/20/2024 6:10:47 AM	Gathering compression options
+4/20/2024 6:10:47 AM	Gathering sequence types
+4/20/2024 6:10:47 AM	Gathering security policies
+4/20/2024 6:10:47 AM	Gather column encryption keys
+4/20/2024 6:10:47 AM	Gathering column master keys
+4/20/2024 6:10:47 AM	Gathering external data sources
+4/20/2024 6:10:47 AM	Gathering external file formats
+4/20/2024 6:10:47 AM	Gathering external tables
+4/20/2024 6:10:47 AM	Gathering XML index compression options
+4/20/2024 6:10:47 AM	Gathering extended properties
+4/20/2024 6:10:48 AM	Gathering assemblies
+4/20/2024 6:10:48 AM	Scanning project for duplicate elements
+4/20/2024 6:10:48 AM	Finished duplicate element processing
+4/20/2024 6:10:56 AM	Finished importing database.
+4/20/2024 6:10:56 AM	A summary of the import was saved to the following location: C:\GitHubRepos\sqlsat\Demos\SQLSatATL\AdventureWorks\Import Schema Logs\AdventureWorks_20240420111035.log
+4/20/2024 6:10:56 AM	Click Finish to continue...
