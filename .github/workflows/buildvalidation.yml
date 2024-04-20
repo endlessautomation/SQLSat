@@ -9,7 +9,7 @@ jobs:
     name: Build SQL Projects
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout@v4
       - name: Add msBuild to path
         uses: microsoft/setup-msbuild@v2
       - name: Build AdventureWorks
