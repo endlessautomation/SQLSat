@@ -1,6 +1,6 @@
 name: Validate Development Branch
 on:
-  pull_request:
+  push:
     branches: [ "dev" ]
   workflow_dispatch:
 
