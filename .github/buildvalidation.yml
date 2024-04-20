@@ -1,0 +1,23 @@
+
+name: Validate Development Branch
+
+on:
+  pull_request:
+    branches: [ "dev" ]
+  workflow_dispatch:
+
+jobs:
+  buildCode:
+    name: Build SQL Projects
+
+    runs-on: windows-latest
+    steps:
+
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Build AdventureWorks DACPAC
+      run: msbuild AdventureWorks\AdventureWorks.sqlproj
