@@ -13,5 +13,5 @@ jobs:
       - name: Add msBuild to path
         uses: microsoft/setup-msbuild@v2
       - name: Build AdventureWorks
-        run: msbuild **\AdventureWorks\AdventureWorks.sqlproj
+        run: msbuild Demos\SQLSatATL\AdventureWorks\AdventureWorks.sqlproj
         
