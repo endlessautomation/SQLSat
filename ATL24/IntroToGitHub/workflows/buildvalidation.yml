@@ -1,0 +1,22 @@
+name: Validate Development Branch
+on:
+  push:
+    branches: 
+      - dev
+  pull_request:
+    branches: [ "dev" ]
+  workflow_dispatch:
+
+jobs:
+  buildCode:
+    name: Build SQL Projects
+
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Add msBuild to path
+        uses: microsoft/setup-msbuild@v2
+        
+      - name: Build AdventureWorks
+        run: msbuild Demos\SQLSatATL\AdventureWorks\AdventureWorks.sqlproj
