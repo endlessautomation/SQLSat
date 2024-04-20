@@ -6,7 +6,7 @@
     <Name>AdventureWorks</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{3e30aaf0-749c-4618-b70d-5b66959dc4ce}</ProjectGuid>
+    <ProjectGuid>{ba4c8b9d-a2a0-4a64-b474-e9e9cdc907d6}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
