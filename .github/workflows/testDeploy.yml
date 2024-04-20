@@ -17,4 +17,4 @@ jobs:
       - name: Build AdventureWorks DACPAC
         run: msbuild Demos\SQLSatATL\AdventureWorks\AdventureWorks.sqlproj
       - name: Deploy DACPAC
-        run: sqlpackage.exe /SourceFile:"AdventureWorks\bin\debug\AdventureWorks.dacpac" /action:publish /TargetConnectionString:"Server=localhost;Database=AWTest;Integrated Security=SSPI;Encrypt=false"
+        run: sqlpackage.exe /SourceFile:"Demos\SQLSatATL\AdventureWorks\bin\debug\AdventureWorks.dacpac" /action:publish /TargetConnectionString:"Server=localhost;Database=AWTest;Integrated Security=SSPI;Encrypt=false"
