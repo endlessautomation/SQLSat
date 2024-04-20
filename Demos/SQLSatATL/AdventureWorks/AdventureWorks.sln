@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureWorks", "AdventureWorks.sqlproj", "{3E30AAF0-749C-4618-B70D-5B66959DC4CE}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureWorks", "AdventureWorks.sqlproj", "{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E30AAF0-749C-4618-B70D-5B66959DC4CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4C8B9D-A2A0-4A64-B474-E9E9CDC907D6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FB08927B-D2E6-43CB-BE3F-490F168D3091}
+		SolutionGuid = {77DD1E20-A7A6-40F6-A679-46D41BAC7E0F}
 	EndGlobalSection
 EndGlobal
