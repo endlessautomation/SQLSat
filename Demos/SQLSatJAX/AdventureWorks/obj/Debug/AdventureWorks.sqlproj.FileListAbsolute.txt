@@ -1,0 +1,6 @@
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\bin\Debug\AdventureWorks.dacpac
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\bin\Debug\AdventureWorks.dll
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\bin\Debug\AdventureWorks.pdb
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.sqlproj.AssemblyReference.cache
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.dll
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.pdb
