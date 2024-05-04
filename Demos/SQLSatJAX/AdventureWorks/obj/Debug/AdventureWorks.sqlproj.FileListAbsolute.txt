@@ -4,3 +4,7 @@ C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\bin\Debug\AdventureWorks.pdb
 C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.sqlproj.AssemblyReference.cache
 C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.dll
 C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\AdventureWorks.pdb
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\Model.xml
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\refactor.xml
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\postdeploy.sql
+C:\Repos\sqlsat\Demos\SQLSatJAX\AdventureWorks\obj\Debug\predeploy.sql
