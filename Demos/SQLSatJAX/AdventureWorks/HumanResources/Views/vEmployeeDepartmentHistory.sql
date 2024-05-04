@@ -20,7 +20,7 @@ FROM [HumanResources].[Employee] e
     ON e.[BusinessEntityID] = edh.[BusinessEntityID] 
     INNER JOIN [HumanResources].[Department] d 
     ON edh.[DepartmentID] = d.[DepartmentID] 
-    INNER JOIN [HumanResources].[Shift] s
+    INNER JOIN [Production].[Shift] s
     ON s.[ShiftID] = edh.[ShiftID];
 
 GO

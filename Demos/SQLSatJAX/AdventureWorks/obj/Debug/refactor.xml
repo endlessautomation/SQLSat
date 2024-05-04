@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
-  <Operation Name="Rename Refactor" Key="b9d4bcc6-458e-404c-b8c7-9d101d1dc87e" ChangeDateTime="05/04/2024 16:54:35">
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="b9d4bcc6-458e-404c-b8c7-9d101d1dc87e" ChangeDateTime="05/04/2024 16:54:35" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[HumanResources].[Employee].[HireDate]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[HumanResources].[Employee]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[StartDate]" />
   </Operation>
-  <Operation Name="Move Schema" Key="bbd6f3bb-605b-4b89-8d9b-9901c68536b7" ChangeDateTime="05/04/2024 17:25:23">
+  <Operation Name="Move Schema" Key="bbd6f3bb-605b-4b89-8d9b-9901c68536b7" ChangeDateTime="05/04/2024 17:25:23" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[HumanResources].[Shift]" />
     <Property Name="ElementType" Value="SqlTable" />
     <Property Name="NewSchema" Value="Production" />
