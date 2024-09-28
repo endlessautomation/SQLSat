@@ -1,0 +1,19 @@
+name: Validate AdventureWorks Project
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: [ test ]
+    steps:
+      - name: "Write Info"
+        run:  echo "Server Name ${{ vars.SQLInstanceName }} "
+      - uses: actions/checkout@v4.1.7
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+      - name: Build AdventureWorks DACPAC
+        run: msbuild AdventureWorks/AdventureWorks.sqlproj -t:rebuild -property:SQLCodeAnalysisRules="+!CustomValidationRules.SR2001" -property:RunSQLCodeAnalysis=true

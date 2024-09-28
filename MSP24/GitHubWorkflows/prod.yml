@@ -1,0 +1,12 @@
+name: Prod Deployment
+on: 
+  push:
+    branches:
+    - main
+  workflow_dispatch:
+
+jobs:
+  call-template:
+    uses: endlessautomation/dbdemos/.github/workflows/dbdeploytemplate.yml@main
+    with:
+      environment: "prod"
