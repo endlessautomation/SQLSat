@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Azure Data Factory Deploy
         # You may pin to the exact commit or the version.
-        uses: TrueNorthDataServices/ADFAutoDeploy@/bd5d6582f3b9c731a068e1ece9c6ac8e7cb67edf
+        uses: TrueNorthDataServices/ADFAutoDeploy@bd5d6582f3b9c731a068e1ece9c6ac8e7cb67edf
        #uses: TrueNorthDataServices/ADFAutoDeploy@v0.1.0-alpha
           
