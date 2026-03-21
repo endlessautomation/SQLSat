@@ -1,0 +1,56 @@
+trigger:
+- main
+
+pool:
+  name: LaptopPool
+
+jobs:
+- job: buildDatabases
+  displayName: Build Visual Studio Database Projects
+  steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      azureSubscription: '<mysubscription>'
+      command: 'build'
+      projects: '$(Build.SourcesDirectory)/AdventureWorks/AdventureWorks.sqlproj'
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Build.SourcesDirectory)/AdventureWorks/bin/debug/AdventureWorks.dacpac'
+      artifact: 'Databases'
+      publishLocation: 'pipeline'
+- job: generateDiffScript
+  dependsOn: buildDatabases
+  displayName: Create Schema Diff for Review
+  steps:
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        artifactName: 'Databases'
+        targetPath: '$(Pipeline.Workspace)'
+    - powershell: sqlpackage.exe /action:script /sourcefile:$(Pipeline.Workspace)/Adventureworks.dacpac /targetConnectionString:"server=localhost;database=AdventureWorks2022;Integrated Security=SSPI;TrustServerCertificate=true;" /outputPath:"$(Pipeline.Workspace)\AWDiff.sql"
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: "$(Pipeline.Workspace)/AWDiff.sql"
+        artifact: 'DiffScript'
+        publishLocation: 'pipeline'
+- job: getApproval
+  dependsOn: generateDiffScript
+  pool: 
+    name: server
+  displayName: Require Approval of Deployment Script
+  steps:
+    - task: ManualValidation@1
+      inputs:
+        notifyUsers: 'someuser@somecompany.com'
+        instructions: 'Review and approve difference script'
+- job: deployOnPremises
+  dependsOn: getApproval
+  displayName: Deploy DACPAC to on-premises SQL instance
+  steps:
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        artifactName: 'Databases'
+        targetPath: '$(Pipeline.Workspace)'
+    - powershell: sqlpackage.exe /action:publish /sourcefile:$(Pipeline.Workspace)/Adventureworks.dacpac /targetConnectionString:"server=localhost;database=AdventureWorks2022;Integrated Security=SSPI;TrustServerCertificate=true;"
+
