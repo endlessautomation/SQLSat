@@ -13,6 +13,14 @@ jobs:
       azureSubscription: '<mysubscription>'
       command: 'build'
       projects: '$(Build.SourcesDirectory)/AdventureWorks/AdventureWorks.sqlproj'
+  #=============================================================================
+  # PowerShell Options instead of DotNetCoreCLI@2
+  #    For SDK-Style SQL Server Projects
+  #     - powershell: 'dotnet build $(Build.SourcesDirectory)/AdventureWorks/AdventureWorks.sqlproj'
+  #    For Standard Visual Studio SQL Server Projects
+  #     - powershell: 'msbuild $(Build.SourcesDirectory)/AdventureWorks/AdventureWorks.sqlproj'
+  #=============================================================================
+
   - task: PublishPipelineArtifact@1
     inputs:
       targetPath: '$(Build.SourcesDirectory)/AdventureWorks/bin/debug/AdventureWorks.dacpac'
