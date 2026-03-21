@@ -1,0 +1,9 @@
+{
+	"name": "TrueNorthDev",
+	"location": "northcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4d11e9ef-74b2-4743-94e5-cd0f43c423af",
+		"tenantId": "f9ca3f2a-a147-4320-9a5c-2f0eeb9262c4"
+	}
+}
